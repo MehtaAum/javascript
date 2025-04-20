@@ -1,4 +1,4 @@
-# [ JavaScript ]
+# JavaScript
 
 This folder contains my daily JavaScript programs (e.g., Day3.js), each demonstrating different concepts.
 
