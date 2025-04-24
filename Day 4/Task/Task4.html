@@ -1,0 +1,26 @@
+<!-- A shopkeeper sells 1 pen for ₹12. If a student buys 15 pens, how much does he pay? -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="number" id="pen" placeholder="how many pen you want to buy ? " style="width : 15%">
+    <button onclick="buy()">click here</button>
+
+    <h4>student pay : <span id="ans"></span></h4>
+    
+</body>
+<script>
+    function buy(){
+        let a = document.getElementById("pen").value
+        a = +a * 12
+
+        document.getElementById("ans").innerText = a
+    }
+</script>
+</html>
