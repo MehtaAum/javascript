@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+
+.box{
+    box-shadow: rgb(255, 255, 255) 0px 7px 36px 0px;
+}
+
+.input1 , .input2{
+    box-shadow: rgba(253, 253, 253, 0.308) 0px 5px 15px 0px;
+}
+.btn {
+    box-shadow: rgba(255, 255, 255, 0.151) 0px 5px 15px 0px;
+}
+.btn:hover{
+    box-shadow: rgba(255, 255, 255, 0.26) 0px 5px 15px 0px;
+}
