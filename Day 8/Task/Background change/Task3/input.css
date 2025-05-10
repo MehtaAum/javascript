@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.btn{
+    box-shadow: rgb(250, 250, 250) 0px 1px 0px, rgb(245, 245, 245) 0px 0px 8px;
+    transition: 0.2s;
+}
+.btn:hover {
+    box-shadow: rgba(255, 255, 255, 0.199) 0px 10px 50px;
+}
