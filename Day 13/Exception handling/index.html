@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show"></h1>
+</body>
+<script>
+    let a = 10
+    let show = document.getElementById("show")
+
+    function hello() {
+            if(a <= 10){
+                throw new Error("a is less than 10 or equal");
+            }
+    }
+
+    try {
+       hello()
+    } catch (error) {
+       show.innerText = error.message
+    }
+</script>
+</html>
