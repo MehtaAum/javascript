@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+.box{
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 6px 24px 0px, rgba(255, 255, 255, 0.2) 0px 0px 0px 1px;
+}
+.circle{
+    transition: 0.3s;
+}
+.circle:hover{
+   transform: scale(0.96);
+   box-shadow: rgba(0, 0, 0, 0.925) 0px 25px 50px -12px;
+   cursor: pointer;
+}
+.display::-webkit-scrollbar {
+    height: 0px;
+  }
+  .display::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+  }
+
+  @media (min-width: 2580px) and (max-width: 3740px) {
+    .rows{
+        gap: 100px;
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1444px) {
+    .box{
+        width: 50%;
+    }
+  }
+  
+  @media (min-width: 616px) and (max-width: 900px) {
+    .box{
+        width: 70%;
+    }
+  }
+  
+  @media (min-width: 418px) and (max-width: 616px) {
+    .box{
+        width: 90%;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 418px) {
+    .box{
+        width: 90%;
+        height: 90vh;
+    }
+    .circle{
+        width: 54px;
+        height: 54px;
+    }
+    .rows{
+        gap: 20px;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width: 300px) {
+    .box{
+        width: 98%;
+        height: 95vh;
+    }
+    .circle{
+        width: 35px;
+        height: 35px;
+    }
+    .rows{
+        gap: 20px;
+    }
+  }
+  
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[rgba(3,7,18,0.95)]">
+
+    <div class="main w-[100%] h-[100vh] flex justify-center items-center">
+
+        <div class="box w-[32%] h-[800px] rounded-[13px]">
+            <div class="heading1 text-white h-[90px] w-[100%] text-3xl flex justify-center items-center font-">Product Price Converter</div>
+
+            <div class="heading2 text-white h-[55px] w-[100%]  flex justify-center items-center font-">Enter product prices in USD (comma separated):</div>
+            <div class="parentInput w-[100%] flex justify-center">
+                <input type="text" class="input1 bg-white w-[70%] rounded-[3px] h-[35px] px-[7px] outline" placeholder="e.g 10,20,30,40">
+            </div>
+
+            <div class="heading3 text-white h-[55px] w-[100%]  flex justify-center items-center font-">Enter conversion rate (USD to INR):</div>
+            <div class="parentInput w-[100%] flex justify-center">
+                <input type="text" class="input2 bg-white w-[70%] rounded-[3px] h-[35px] px-[7px] outline" placeholder="e.g 82">
+            </div>
+
+            <div class="parBtn w-[100%] h-[120px] flex justify-center items-center">
+                <button class="btn w-[28%] h-[60px] rounded-[6px] bg-blue-500 cursor-grab hover:bg-blue-600 duration-[0.2s] text-[17px] text-white">Convert Prices</button>
+            </div>
+
+
+            <div class="allDiv w-[100%] h-[408px] text-white flex">
+                <div class="one  w-[33.33%] text-center ">
+                    <p class="text-[17px] font-semibold">Items : </p>
+                    <div class="info  w-[100%] h-[90%]   space-y-[14px]">
+                        <p>Headphone</p>
+                        <p>Charger</p>
+                        <p>Phone</p>
+                        <p>Monitor</p>
+                        <p>Mouse</p>
+                        <p>Speaker</p>
+                        <p>Graphic card</p>
+                        <p>Cpu</p>
+                        <p>Ram</p>
+                        <p>Mother board</p>
+                    </div>
+                </div>
+
+                <div class="two  w-[33.33%] text-center ">
+                    <p class="text-[17px] font-semibold">Original Price (USD)</p>
+                    <div class="info  w-[100%] h-[90%] space-y-[14px]">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="three w-[33.33%] text-center">
+                    <p class="text-[17px] font-semibold">Converted Price (INR)</p>
+                    <div class="info  w-[100%] h-[90%]  space-y-[14px]">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

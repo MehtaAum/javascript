@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+body{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.btn-add , .text-input{
+    box-shadow: rgba(255, 255, 255, 0.301) 0px 7px 29px 0px;
+    transition: 0.4s;
+}
+.btn-add:hover , .text-input:hover{
+    box-shadow: rgba(255, 255, 255, 0.445) 0px 7px 29px 0px;
+}
+.btn-add:hover {
+    transform: scale(0.95);
+}
+.text-show{
+    width: 100%;
+    height: auto;
+    background-color: #e9e9e9;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-show:hover{
+    box-shadow: rgba(255, 255, 255, 0.445) 0px 7px 29px 0px;
+
+}
+.child-left{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    word-break: break-word;
+    flex-wrap: wrap;
+}
+.child-right{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.childsubleft , .childsubright{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    padding-left: 3.5px;
+}
+.childsubleft:hover , .childsubright:hover{
+    transform: scale(0.90);
+}
+.new-input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+ 
+}
+@media (min-width: 359px) and (max-width: 519px) {
+    .child-left{
+        width: 78%;
+    }
+    .child-right{
+        width: 22%;
+        justify-content: space-between;
+    }
+    
+    .text-show{
+        width: 90%;
+    }
+}
+@media (min-width: 0px) and (max-width: 358px) {
+    .child-left{
+        width: 70%;
+    }
+    .child-right{
+        width: 30%;
+        justify-content: space-between;
+    }
+    .text-show{
+        width: 100%;
+    }
+}

@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="w-[100%] h-[100vh] bg-[#030712dc] flex justify-center items-center">
+  
+    <div class="box w-[20%] h-[59vh] rounded-3xl flex flex-col items-center gap-3 overflow-hidden ">
+
+        <div class="display w-[87%] h-[28%] flex justify-end items-end text-white text-[33px]   overflow-scroll" ></div>
+
+        <div class="sub-box h-[70%]">
+
+            <div class="rows w-[100%] h-[20%] flex justify-center items-center gap-10">
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#a7a7a7]" onclick="acFun()" >AC</div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#a7a7a7]" onclick="clearFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 512 512">
+                        <path fill="none" stroke="#353534" stroke-linejoin="round" stroke-width="32" d="M135.19 390.14a28.8 28.8 0 0 0 21.68 9.86h246.26A29 29 0 0 0 432 371.13V140.87A29 29 0 0 0 403.13 112H156.87a28.84 28.84 0 0 0-21.67 9.84L46.33 256l88.86 134.11Z" />
+                        <path fill="none" stroke="#353534" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M336.67 192.33L206.66 322.34m130.01 0L206.66 192.33m130.01 0L206.66 322.34m130.01 0L206.66 192.33" />
+                    </svg>
+                </div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#a7a7a7]" onclick="perFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#353534" d="M7.5 11q-1.45 0-2.475-1.025T4 7.5t1.025-2.475T7.5 4t2.475 1.025T11 7.5T9.975 9.975T7.5 11m0-2q.625 0 1.063-.437T9 7.5t-.437-1.062T7.5 6t-1.062.438T6 7.5t.438 1.063T7.5 9m9 11q-1.45 0-2.475-1.025T13 16.5t1.025-2.475T16.5 13t2.475 1.025T20 16.5t-1.025 2.475T16.5 20m0-2q.625 0 1.063-.437T18 16.5t-.437-1.062T16.5 15t-1.062.438T15 16.5t.438 1.063T16.5 18M5.4 20L4 18.6L18.6 4L20 5.4z" />
+                    </svg>
+                </div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#eea00a]" onclick="divideFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle  cx="12" cy="6" r="1" fill="#353534" />
+                            <circle  cx="12" cy="18" r="1" fill="#353534" />
+                            <path d="M5 12h14" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="rows w-[100%] h-[20%] flex justify-center items-center gap-10">
+                <div class="circle seven flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="sevenFun()">7</div>
+                <div class="circle eight flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="eightFun()">8</div>
+                <div class="circle nine flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="nineFun()">9</div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px]  rounded-full bg-[#eea00a]" onclick="multiFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#FFFFFF" d="M6.707 5.293a1 1 0 0 0-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 1 0 1.414 1.414L12 13.414l5.293 5.293a1 1 0 0 0 1.414-1.414L13.414 12l5.293-5.293a1 1 0 0 0-1.414-1.414L12 10.586z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="rows w-[100%] h-[20%] flex justify-center items-center gap-10">
+                <div class="circle four flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="fourFun()">4</div>
+                <div class="circle five flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="fiveFun()">5</div>
+                <div class="circle six flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="sixFun()">6</div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#eea00a]" onclick="subFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#FFFFFF" d="M5 11h14a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="rows w-[100%] h-[20%] flex justify-center items-center gap-10">
+                <div class="circle three flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="threeFun()">3</div>
+                <div class="circle two flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="twoFun()">2</div>
+                <div class="circle one flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="oneFun()">1</div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px] border border-pink-300 rounded-full bg-[#eea00a]" onclick="addFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#FFFFFF" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="rows w-[100%] h-[20%] flex justify-center items-center gap-10">
+                <div class="circle zero flex justify-center items-center w-[153px] h-[56px] rounded-3xl bg-[#353534] text-white" onclick="zeroFun()">0</div>
+                <div class="circle comma flex justify-center items-center w-[56px] h-[56px] rounded-full bg-[#353534] text-white" onclick="decimalFun()">.</div>
+                <div class="circle flex justify-center items-center w-[56px] h-[56px]  rounded-full bg-[#eea00a]" onclick="equalFun()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="#FFFFFF" d="M19 8H5v2h14zm0 6H5v2h14z" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
