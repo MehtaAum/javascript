@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 300px;
+            height: auto;
+        }
+        .box{
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="body">
+</body>
+<script>
+    let body = document.querySelector("body")
+    let random = Math.floor(Math.random()*10)
+    let box = document.createElement("div")
+    box.className = "box"
+
+    
+    fetch("https://fakestoreapi.com/products")
+    .then((request) => request.json())
+    .then((data) => {
+        let product = data[random]
+        let img = document.createElement("img")
+        let title = document.createElement("h3")
+        let price = document.createElement("h4")
+        let des = document.createElement("p")
+        let category = document.createElement("h4")
+        let rating = document.createElement("span")
+        let counts = document.createElement("div")
+        
+        img.setAttribute("src" , product.image)
+        title.innerHTML = `Title : ${product.title}` 
+        price.innerHTML = `Price : ${product.price}`
+        des.innerHTML = `Description : ${product.description}`
+        category.innerHTML = `Category : ${product.category}`
+        rating.innerHTML = `Rating : ${product.rating.rate}`
+        counts.innerHTML = `Counts : ${product.rating.count}`
+
+        body.appendChild(box)
+        box.appendChild(img)
+        box.appendChild(title)
+        box.appendChild(price)
+        box.appendChild(des)
+        box.appendChild(category)
+        box.appendChild(rating)
+        box.appendChild(counts)
+    })
+
+</script>
+</html>

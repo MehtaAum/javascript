@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        gap: 15px;
+    }
+
+</style>
+</head>
+<body class="bd">
+    
+</body>
+<script>
+    let body = document.querySelector(".bd")
+    fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw")
+    .then((request) => request.json())
+    .then(res => {
+        if(res.type === "twopart"){
+            let title = document.createElement("div")
+            let word = document.createElement("div")
+            title.innerHTML = `Setup : ${res.setup}`
+            word.innerHTML = `Delivery : ${res.delivery}`
+
+            body.appendChild(title)
+            body.appendChild(word)
+        }
+        else if(res.type === "single"){
+            let single = document.createElement("div")
+            single.innerHTML = `Single Joke : ${res.joke}`
+            body.appendChild(single)
+        }
+       
+    })
+</script>
+</html>
