@@ -1,5 +1,7 @@
 let form = document.querySelector(".box")
 let button = document.querySelector(".btn-submit")
+let select1 = document.getElementById("country")
+let select2 = document.getElementById("country2")
 let nameForm = document.getElementById("name")
 let numberForm = document.getElementById("number")
 let pincode = document.getElementById("pincode")
@@ -172,14 +174,51 @@ form.addEventListener('submit', function(event) {
   let isValid = checkVal();
 
     if (isValid) {
-        form.submit();
+        //LOCAL STORAGE & SHOWING DATA TO USER
+
+        let genderVal = document.querySelector('input[name="gender"]:checked').value
+        let checkboxVal = checkbox.checked
+
+        let userData = {
+            country: select1.value,
+            name: nameForm.value.trim(),
+            mobile: numberForm.value.trim(),
+            pincode: pincode.value.trim(),
+            flat: flat.value.trim(),
+            area: area.value.trim(),
+            landmark: landmark.value.trim(),
+            town: town.value.trim(),
+            state: select2.value,
+            gender: genderVal,
+            isDefault: checkboxVal
+        }
+
+         localStorage.setItem("user1", JSON.stringify(userData));
+ 
+    //optional method      
+    // for (let key in userData) {
+    //   document.write(`<p><strong>${key}</strong>: ${userData[key]}</p>`);
+    // }
+    //optional method
+
+    const keys = Object.keys(userData)
+    for(let i = 0; i < keys.length; i++){
+        let key = keys[i]
+        document.write(`<p><strong>${key}</strong>: ${userData[key]}</p>`);
+    }
+
+
+        //LOCAL STORAGE & SHOWING DATA TO USER
     }
     else{
         alert("Fill proper details !")
     }
 
+
 });
 
 
+
 // VALIDATION
+
 
