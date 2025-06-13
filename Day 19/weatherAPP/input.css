@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+.images{
+    width: 100%;
+    height: 100vh;
+      background-image: url("asset/sunny\ 3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
