@@ -1,3 +1,4 @@
+
 @import "tailwindcss";
 
 .body{
@@ -5,7 +6,6 @@
   background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
-
 
 .input-class input{
     transition: 0.3s;
@@ -17,10 +17,15 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
 .slide{
   width: 100%;
   height: 500px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.50);
   position: absolute;
   bottom: 0px;
-  border-radius: 10px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  overflow: hidden;
 }
 
 #arrow{
@@ -41,3 +46,9 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0
   }
 }
 
+
+@media (max-width: 1023px) {
+  .slide {
+    height: 700px;
+  }
+}
