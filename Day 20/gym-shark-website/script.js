@@ -100,3 +100,106 @@ circleLeft.addEventListener("click" , function () {
     subSlider.style.transform = `translateX(${current}px)`
     subSlider.style.transition = `transform 0.4s ease`
 })
+
+// video paused & play
+let videoHero = document.getElementById("video-hero");
+let heroVideo = document.getElementById("heroVideo");
+
+videoHero.addEventListener("click", function (e) {
+  if (heroVideo.paused) {
+    heroVideo.play();
+  } else {
+    heroVideo.pause();
+  }
+});
+// video paused & play
+
+
+
+// slider 2
+let menPrevButton = document.querySelector(".men-prev");
+let menNextButton = document.querySelector(".men-next");
+let menSliderTrack = document.querySelector(".men-sub-slider");
+
+let menCurrentPosition = 0;
+
+let getMenCardWidth = function () {
+  return document.querySelector(".men-card").offsetWidth + 8;
+};
+
+menNextButton.addEventListener("click", function () {
+  menCurrentPosition -= getMenCardWidth();
+  menSliderTrack.style.transform = `translateX(${menCurrentPosition}px)`;
+  menSliderTrack.style.transition = `transform 0.4s ease`;
+});
+
+menPrevButton.addEventListener("click", function () {
+  menCurrentPosition += getMenCardWidth();
+  menSliderTrack.style.transform = `translateX(${menCurrentPosition}px)`;
+  menSliderTrack.style.transition = `transform 0.4s ease`;
+});
+
+// slider 2
+
+// slider 3
+let womenPrevButton = document.querySelector(".women-prev");
+let womenNextButton = document.querySelector(".women-next");
+let womenSliderTrack = document.querySelector(".women-sub-slider");
+
+let womenCurrentPosition = 0;
+
+let getWomenCardWidth = function () {
+  return document.querySelector(".women-card").offsetWidth + 8; // card width + gap
+};
+
+womenNextButton.addEventListener("click", function () {
+  womenCurrentPosition -= getWomenCardWidth();
+  womenSliderTrack.style.transform = `translateX(${womenCurrentPosition}px)`;
+  womenSliderTrack.style.transition = `transform 0.4s ease`;
+});
+
+womenPrevButton.addEventListener("click", function () {
+  womenCurrentPosition += getWomenCardWidth();
+  womenSliderTrack.style.transform = `translateX(${womenCurrentPosition}px)`;
+  womenSliderTrack.style.transition = `transform 0.4s ease`;
+});
+
+// slider 3
+
+//video 2 play & paused
+let videoHero2 = document.getElementById("video-hero2");
+let heroVideo2 = document.getElementById("heroVideo2");
+
+videoHero2.addEventListener("click", function (e) {
+  if (heroVideo2.paused) {
+    heroVideo2.play();
+  } else {
+    heroVideo2.pause();
+  }
+});
+//video 2 play & paused
+
+
+// slider 4
+let accessoriesPrevButton = document.querySelector(".accessories-prev");
+let accessoriesNextButton = document.querySelector(".accessories-next");
+let accessoriesSliderTrack = document.querySelector(".accessories-sub-slider");
+
+let accessoriesCurrentPosition = 0;
+
+let getAccessoriesCardWidth = function () {
+  return document.querySelector(".accessories-card").offsetWidth + 8;
+};
+
+accessoriesNextButton.addEventListener("click", function () {
+  accessoriesCurrentPosition -= getAccessoriesCardWidth();
+  accessoriesSliderTrack.style.transform = `translateX(${accessoriesCurrentPosition}px)`;
+  accessoriesSliderTrack.style.transition = `transform 0.4s ease`;
+});
+
+accessoriesPrevButton.addEventListener("click", function () {
+  accessoriesCurrentPosition += getAccessoriesCardWidth();
+  accessoriesSliderTrack.style.transform = `translateX(${accessoriesCurrentPosition}px)`;
+  accessoriesSliderTrack.style.transition = `transform 0.4s ease`;
+});
+// slider 4
