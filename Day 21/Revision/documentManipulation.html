@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hello"></div>
+    <div class="hello2"></div>
+    <div class="hello2"></div>
+    <div class="hello2"></div>
+    <div class="hello2"></div>
+    
+    <p>hi</p>
+    <p>hi</p>
+    <p>hi</p>
+    <p>hi</p>
+    
+    <span id="hey"></span>
+
+    <div class="parent">
+
+        <span>hi</span>
+        <span>hello</span>
+        <span>bye</span>
+
+    </div>
+    
+    <script>
+        let hello = document.getElementById("hello")
+        console.log(hello);
+
+        //select all elements with given class name
+        let hello2 = document.getElementsByClassName("hello2")
+        console.log(hello2);
+
+        //selecting with tag
+        let para = document.getElementsByTagName("p")
+        console.log(para);
+
+        // querySelector can select any element using CSS selectors (like class, id, or tag)
+        // Use '.' for class, '#' for id (e.g., '.box', '#idName', 'span')
+        // querySelector returns the first matching element
+        let single = document.querySelector("#hey");
+        console.log(single);
+
+        // querySelectorAll selects all matching elements and returns a NodeList (not HTMLCollection)
+        // You can loop over NodeList using forEach
+        let single2 = document.querySelectorAll("span");
+        console.log(single2);
+
+
+        let parent = document.querySelector(".parent")
+        console.log(parent.children[0]);
+        console.log(parent.firstElementChild.textContent);
+        console.log(parent.lastElementChild.textContent);
+        
+    </script>
+</body>
+</html>

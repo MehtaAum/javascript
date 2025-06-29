@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kemcho{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>how are you</h1>
+
+    <div class="kemcho" name=""> kem cho </div>
+
+    <script>
+            let hi = document.querySelector("h1");
+            console.log(hi.tagName); // Returns the tag name of the element in uppercase (e.g., "H1")
+            console.log(hi.innerText); // Returns the visible text content of the element and its children (ignores hidden elements and styles)
+            console.log(hi.innerHTML); // Returns the HTML content (tags + text) inside the element
+            console.log(hi.textContent); // Returns all text content of the element, including hidden text (via CSS like display: none)
+
+        //attribute
+            let div = document.querySelector(".kemcho")
+            let get = div.getAttribute("class")
+            console.log(get);
+
+            div.setAttribute("name" , "hey") 
+            
+
+            console.log(div.style); //to access style in js
+                
+        //insert element
+
+            let create = document.createElement("div")
+            create.innerHTML = "hello world"
+            
+             div.appendChild(create) //to append in last of parent element
+            // div.prepend(create) //to append in first of parent element
+            // div.before(create) //to add before parent element
+            // div.after(create) //to add after parent element
+        
+        //Delete element
+            
+            hi.remove() 
+            // div.removeChild(create)
+        
+    </script>
+</body>
+</html>

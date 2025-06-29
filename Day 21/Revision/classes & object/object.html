@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //create object
+            const student = {
+                    hi : "hello",
+                    print : function run(){
+                    console.log("print function run");
+
+                    }
+            }
+
+            console.log(student);
+        //create object
+
+
+            //you can see that there is one object inside student object (prototype)
+
+            //* Every JavaScript object has an internal hidden property called [[Prototype]]
+            //* the prototype is a powerful feature that allows objects to inherit properties and methods from other objects.
+            //* it has some default function like push and all
+            //* we can set prototype using _ _proto_ _
+            //* if object and prototype has same method object method will be used 
+
+        // Prototype //
+
+            const employee = {
+                 calTax(){
+                    console.log("calculated tax successfully");
+                },
+            }
+
+            employee.__proto__ = student
+
+            console.log(employee);
+            console.log(employee.print);
+
+            
+            
+            const employee2 = {
+                 run(){
+                    console.log("print function run employee2");
+
+                },
+            }
+
+            employee2.__proto__ = student
+
+            console.log(employee2.run()); //both prototype and object method same so object method works
+            
+
+    </script>
+</body>
+</html>

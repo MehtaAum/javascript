@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- inline event handling -->
+    <button onclick="console.log('hello world')">click me</button> 
+    <button id="btn2">Click here</button>
+    <button id="btn3">Click here 3</button>
+    <button id="btn4">Click here 4</button>
+    
+    <script>
+        //popular event (more: visit mdn)
+        
+        //* mouse event (click, doubleclick etc)
+        //* keyboard event (keypress , keyup , keydown)
+        //* form event (submit etc.)
+        // print event and many more 
+
+        let btn2 = document.getElementById("btn2")
+
+        btn2.ondblclick = () => {
+            console.log("btn2 print");
+            
+        }
+
+        //Event object
+        
+        let btn3 = document.getElementById("btn3")
+
+        btn3.onclick = (e) => { //in parenthesis (e) is a object see in console.log
+            console.log(e);
+            console.log(e.target);
+            console.log(e.type);
+            //mostly used this 
+
+        }
+
+
+        //Event listeners 
+
+        btn2.addEventListener("mouseenter" , (event) => { // it can pass event object also , (event name , callback)
+        console.log("mouse enter");
+        
+        })
+
+        let btn4 = document.getElementById("btn4")
+
+         function handleClick(){
+            console.log("btn4 click");
+            
+         }
+
+         btn4.addEventListener("click" , (handleClick) )
+
+         btn3.addEventListener("click" , ()=> {
+            btn4.removeEventListener("click" , (handleClick))
+            console.log("delete successfully");
+            
+         })
+    
+    </script>
+</body>
+</html>
