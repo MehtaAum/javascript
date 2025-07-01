@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <script>
+    //synchronous:- means code runs in a particular sequence of instruction given in the program. each instruction wait for previous instruction to complete its execution.
+    //example:-
+
+        console.log("hello1");
+        console.log("hello2");
+        console.log("hello3");
+   
+    //asynchronous:- Asynchronous in JavaScript means code that runs without blocking the main thread — it allows the program to continue executing while waiting for operations like API calls, file reads, or timers to finish.
+    // Example:
+    // setTimeout, fetch, async/await are used for asynchronous tasks.  
+
+        console.log("1");
+        console.log("2");
+        
+        setTimeout(()=> {
+            console.log("hello world");
+            
+        }, 4000) //4 sec
+
+        console.log("3");
+        console.log("4");
+        
+ </script>   
+
+</body>
+</html>

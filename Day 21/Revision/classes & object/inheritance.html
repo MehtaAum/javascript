@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //example 
+    
+        class person{
+            eat(){
+                console.log("eating");
+                
+            }
+            sleep(){
+                console.log("sleeping");
+
+            }
+        }
+
+        class engineer extends person{
+            work(){
+                console.log("working");
+                
+            }
+        }
+
+        let aum = new engineer()
+
+        console.log(aum.eat()) , aum.sleep(); // i can use parent method also 
+
+    //example  
+    
+    //method overriding
+
+        class parent{
+            eat(){
+                console.log("eating 2");
+                
+            }
+            sleep(){
+                console.log("sleeping 2");
+
+            }
+            
+            work(){
+                console.log("working 2 parent");
+                
+            }        
+        }
+
+        class child extends parent{
+            work(){
+                console.log("working 2 child");
+                
+            }
+        }
+
+        let obj = new child()
+
+        console.log(obj.work());  //when method are same in child and parent child method will work
+
+    //method overriding
+
+
+    //super keyword
+    
+        //* super keyword is used to access parent constructor and its method in child see example below.
+
+        class Car {
+            constructor(name){
+                this.name = name
+            }
+            repair(){
+                console.log("repairing");
+                
+            }
+            start(){
+                console.log("starting");
+                
+            }
+        }
+
+        class suvCar extends Car{
+            constructor(name , key){
+                super(name) 
+                this.key = key
+            }
+            offRoad(){
+                super.repair() //direct use method of parent using super keyword
+                console.log("offRoad mode on");
+                
+            }
+        }
+
+        let bmw = new suvCar("bmw","123")
+
+        console.log(bmw);
+        console.log(bmw.offRoad());
+        
+
+    //super keyword
+</script>
+
+</body>
+</html>

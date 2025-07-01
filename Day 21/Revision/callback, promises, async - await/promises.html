@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+//promises:- promise is for "eventual" completion of task. it is an object in js. (it is a solution to callback hell)    
+//resolve & reject are callback provided by js
+
+//example:-
+ let promise = new Promise((resolve , reject) => {
+
+        setTimeout(()=>{
+            console.log("data" , 1);
+            resolve("success")
+            // reject("error found")
+            console.log(promise);
+        },3000)
+
+ })
+
+ console.log(promise);
+ 
+promise.then((res)=>{
+    console.log(res);
+})
+
+promise.catch((err)=>{
+    console.log(err);
+    
+})
+
+</script>
+
+</body>
+</html>

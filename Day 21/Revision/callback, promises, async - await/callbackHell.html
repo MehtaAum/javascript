@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    //callback hell :- nested callback stacked below one another forming pyramid structure.
+    //this style of programming becomes difficult to understand & manage 
+    //example:-
+
+        function getData(data , nextData){
+
+            setTimeout(()=>{
+                console.log("data" , data);
+                if(nextData){
+                    nextData()
+                }
+            },2000)
+            
+        }
+
+        getData(1 , ()=>{
+            getData(2 , ()=>{
+                getData(3)
+            })
+        })
+
+    //modern solution:- promises , async/await
+</script>    
+</body>
+</html>

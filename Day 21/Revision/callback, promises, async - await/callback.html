@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+  //callback:- A function passed as an argument to another function
+
+  //synchronous example:-
+
+    function sum(a , b ){
+       console.log(a + b);
+       
+    }
+
+    function calculate(a , b , sumOfAB) {
+        console.log(a , b );
+        sumOfAB(a , b)
+    }
+
+    calculate(1,2, sum)
+
+    //asynchronous example;-
+
+    function hello(){
+        console.log("hello aum");
+        
+    }
+
+    setTimeout(hello , 5000)
+
+    console.log("hi");
+    
+
+</script>    
+</body>
+</html>
