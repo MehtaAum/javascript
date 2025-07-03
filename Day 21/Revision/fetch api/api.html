@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img src="" alt="">
+
+<script>
+//api :- application programming interface
+//fetch api provides interface for fetching (sending/receiving) resources
+//it uses REQUEST and RESPONSE object
+
+//ajax : is asynchronous js & xml
+//json : is javascript object notation - json() -> method returns a second promises that resolves with the result of parsing the response body text as json(input is json, output is js object)
+//response & request Doc :- (https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status) , (https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods)
+
+
+//using Async-Async
+const url = "https://dog.ceo/api/breeds/image/random"
+
+const dog = async () => {
+   try {
+        let response = await fetch(url)
+        console.log(response);
+        let data = await response.json()
+        console.log(data);
+
+        //other js code
+        let img = document.querySelector("img")
+        img.setAttribute("src", data.message)
+        //other js code
+
+   } catch (error) {
+    console.log("Error fetching dog image", error);
+   }
+
+}
+
+dog()
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

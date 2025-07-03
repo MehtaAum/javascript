@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+//async-await :- 
+//async function always return promises
+//await pause the execution of its surrounding async function until the promises is not settled
+//await only work inside async-function 
+
+//example :- 
+
+function api(){
+    return new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            console.log("success");
+            resolve("success")
+        },3000)
+    })
+}
+
+async function function1(){
+    await api()
+    console.log("successfully done")
+}
+function1()
+</script>
+
+</body>
+</html>
