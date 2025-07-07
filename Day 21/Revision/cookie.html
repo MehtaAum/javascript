@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">firstName
+            <input type="text" id="input1">
+    </label>
+    <br>
+    <br>
+    <label for="">lastName
+            <input type="text" id="input2">
+    </label>
+    <br>
+    <br>
+    <button id="set">Set Cookie</button> &nbsp &nbsp
+    <button id="get">Get Cookie</button>
+
+<script>
+    //cookie = a small file stored on your computer used to remember information about the user saved in name=value pairs.
+
+    // document.cookie = "firstName=lastName; expires=sun, 1 january 2030 12:00:00 UTC path=/" //creating cookie
+    // document.cookie = "aum=hello; expires=sun, 1 january 2030 12:00:00 UTC path=/" //creating cookie
+    // console.log(document.cookie);
+    
+    // setCookie("aum",22,1)
+    // setCookie("hello",24,3)
+
+    // deleteCookie("hello")
+
+    let set = document.getElementById("set");
+    let get = document.getElementById("get");
+    let input1 = document.getElementById("input1");
+    let input2 = document.getElementById("input2");
+
+    function setCookie(name, value , daysToLive){
+        const date = new Date();
+        date.setTime(date.getTime() + (daysToLive * 24 * 60 * 60 * 1000));
+        let expires = "expires=" + date.toUTCString();
+        document.cookie = `${name}=${value}; ${expires}; path=/`;
+    }
+
+    
+    function getCookie(name){
+        const cDecode = decodeURIComponent(document.cookie);
+        const cArray = cDecode.split("; ");
+        let result = null;
+
+        cArray.forEach(element => {
+            if(element.indexOf(name + "=") === 0){
+                result = element.substring(name.length + 1);
+            }
+        });
+
+        return result;
+    }
+
+    set.addEventListener("click", function(){
+        setCookie(input1.value, input2.value, 3); // 3 days
+        console.log(document.cookie);
+    });
+
+    get.addEventListener("click", function(){
+        console.log(getCookie(input1.value));
+    });
+
+    function deleteCookie(input1) {
+        document.cookie = `${input1.value}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+    }
+</script>    
+
+</body>
+</html>
