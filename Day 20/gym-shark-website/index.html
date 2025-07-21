@@ -4,58 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./asset/logo.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <title>Gym Shark</title>
 </head>
 <body class="body">
   
-<div class="header w-[100%] h-[60px] fixed px-[25px] sm:px-[35px] lg:px-[56px] flex items-center justify-between bg-white z-40">
-
-  <div class="flex justify-center items-center gap-3 lg:hidden  ">
-        <svg xmlns="http://www.w3.org/2000/svg" class="hamburger lg:hidden" width="26" height="26" viewBox="0 0 24 24">
-        <path fill="none" stroke="#000" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m16 5H4m16 5H4" />
-        </svg>
-
-        <svg xmlns="http://www.w3.org/2000/svg" class="search-logo lg:hidden" width="24" height="24" viewBox="0 0 24 24">
-        <path fill="#000" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
-
-</div>
-  
+<div class="header w-[100%] h-[60px] fixed px-[25px] sm:px-[35px] lg:px-[56px] flex items-center justify-between bg-white z-40">  
 
   <img src="./asset/logo.svg" alt="">
 
-  <div class="text-[14px]  lg:ms-[300px] hidden lg:flex gap-8 font-extrabold">
-    <p class="cursor-pointer">WOMEN</p>
-    <p class="cursor-pointer">MAN</p>
-    <p class="cursor-pointer">ACCESSORIES</p>
-  </div>
+  <div class="text-[12px] lg:text-[14px] flex gap-5 md:gap-8 font-extrabold">
+  <a href="#women" class="cursor-pointer">WOMEN</a>
+  <a href="#man" class="cursor-pointer">MAN</a>
+  <a href="#accessories" class="cursor-pointer">ACCESSORIES</a>
+</div>
 
 
-  <div class="w-[auto] lg:w-[25%] h-[100%] flex justify-between items-center">
-        <div class="w-[60%] h-[45px] hidden lg:flex">
-          <input type="text" id="search" class="bg-[#f5f4f4] hover:bg-[#e0e0e0] duration-[0.3s] outline-none w-full px-3 ps-10 h-[100%] rounded-[10px]" placeholder="Product">
 
-          <svg xmlns="http://www.w3.org/2000/svg" class="search-logo ms-2 absolute bottom-[18px]" width="24" height="24" viewBox="0 0 24 24">
-          <path fill="#000" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
-          </svg>
-        </div>
+  <div class="w-[auto] lg:w-[auto] h-[100%] flex justify-between items-center">
 
         <div class="flex items-center justify-center gap-2 xl:gap-5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer w-[20px] lg:w-[24px] h-[20px] lg:h-[24px]" viewBox="0 0 24 24">
-          <path fill="#000" d="m8.962 18.91l.464-.588zM12 5.5l-.54.52a.75.75 0 0 0 1.08 0zm3.038 13.41l.465.59zm-5.612-.588C7.91 17.127 6.253 15.96 4.938 14.48C3.65 13.028 2.75 11.335 2.75 9.137h-1.5c0 2.666 1.11 4.7 2.567 6.339c1.43 1.61 3.254 2.9 4.68 4.024zM2.75 9.137c0-2.15 1.215-3.954 2.874-4.713c1.612-.737 3.778-.541 5.836 1.597l1.08-1.04C10.1 2.444 7.264 2.025 5 3.06C2.786 4.073 1.25 6.425 1.25 9.137zM8.497 19.5c.513.404 1.063.834 1.62 1.16s1.193.59 1.883.59v-1.5c-.31 0-.674-.12-1.126-.385c-.453-.264-.922-.628-1.448-1.043zm7.006 0c1.426-1.125 3.25-2.413 4.68-4.024c1.457-1.64 2.567-3.673 2.567-6.339h-1.5c0 2.198-.9 3.891-2.188 5.343c-1.315 1.48-2.972 2.647-4.488 3.842zM22.75 9.137c0-2.712-1.535-5.064-3.75-6.077c-2.264-1.035-5.098-.616-7.54 1.92l1.08 1.04c2.058-2.137 4.224-2.333 5.836-1.596c1.659.759 2.874 2.562 2.874 4.713zm-8.176 9.185c-.526.415-.995.779-1.448 1.043s-.816.385-1.126.385v1.5c.69 0 1.326-.265 1.883-.59c.558-.326 1.107-.756 1.62-1.16z" />
-          </svg>
 
-          <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer w-[20px] lg:w-[24px] h-[20px] lg:h-[24px]" viewBox="0 0 24 24">
-          <path fill="#000" fill-rule="evenodd" d="M12 1.25a4.75 4.75 0 1 0 0 9.5a4.75 4.75 0 0 0 0-9.5M8.75 6a3.25 3.25 0 1 1 6.5 0a3.25 3.25 0 0 1-6.5 0M12 12.25c-2.313 0-4.445.526-6.024 1.414C4.42 14.54 3.25 15.866 3.25 17.5v.102c-.001 1.162-.002 2.62 1.277 3.662c.629.512 1.51.877 2.7 1.117c1.192.242 2.747.369 4.773.369s3.58-.127 4.774-.369c1.19-.24 2.07-.605 2.7-1.117c1.279-1.042 1.277-2.5 1.276-3.662V17.5c0-1.634-1.17-2.96-2.725-3.836c-1.58-.888-3.711-1.414-6.025-1.414M4.75 17.5c0-.851.622-1.775 1.961-2.528c1.316-.74 3.184-1.222 5.29-1.222c2.104 0 3.972.482 5.288 1.222c1.34.753 1.961 1.677 1.961 2.528c0 1.308-.04 2.044-.724 2.6c-.37.302-.99.597-2.05.811c-1.057.214-2.502.339-4.476.339s-3.42-.125-4.476-.339c-1.06-.214-1.68-.509-2.05-.81c-.684-.557-.724-1.293-.724-2.601" clip-rule="evenodd" />
-          </svg>
-
-          <svg xmlns="http://www.w3.org/2000/svg" class="cursor-pointer w-[20px] lg:w-[24px] h-[20px] lg:h-[24px]" viewBox="0 0 24 24">
-          <g fill="none" stroke="#000" stroke-width="1.5">
-          <path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301S6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154s.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z" />
-          <path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4" opacity="0.5" />
-          <path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Z" />
-          </g>
-          </svg>
+          <div  id="add-cart-btn" class="cursor-pointer w-[20px] lg:w-[24px] h-[20px] lg:h-[24px] relative">
+              <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 24 24">
+            <g fill="none" stroke="#000" stroke-width="1.5">
+            <path d="M3.864 16.455c-.858-3.432-1.287-5.147-.386-6.301S6.148 9 9.685 9h4.63c3.538 0 5.306 0 6.207 1.154s.472 2.87-.386 6.301c-.546 2.183-.818 3.274-1.632 3.91c-.814.635-1.939.635-4.189.635h-4.63c-2.25 0-3.375 0-4.189-.635c-.814-.636-1.087-1.727-1.632-3.91Z" />
+            <path d="m19.5 9.5l-.71-2.605c-.274-1.005-.411-1.507-.692-1.886A2.5 2.5 0 0 0 17 4.172C16.56 4 16.04 4 15 4M4.5 9.5l.71-2.605c.274-1.005.411-1.507.692-1.886A2.5 2.5 0 0 1 7 4.172C7.44 4 7.96 4 9 4" opacity="0.5" />
+            <path d="M9 4a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-4a1 1 0 0 1-1-1Z" />
+            </g>
+            </svg>
+             
+            <div class="round-count w-[16px] h-[16px] rounded-full absolute top-0 right-0 flex justify-center items-center text-white font-bold text-[12px]"></div>
+          </div>
+         
         </div>
 
   </div>
@@ -115,242 +97,242 @@ load of new reasons to go gym.</pre>
   
     <div class="sub-slider w-[2500%] sm:w-[1200%]  md:w-[800%] lg:w-[390%] h-[707px] flex gap-2"> 
       
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I1.jpg)] hover:bg-[url(./asset/IC1.jpg)] duration-[0.2s] cursor-pointer"></div>
 
             <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>24</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>24</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
 
         </div>
         
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I2.jpg)] hover:bg-[url(./asset/IC2.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">We Do Gym Graphic Oversized T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">We Do Gym Graphic Oversized T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>169</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>169</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I3.jpg)] hover:bg-[url(./asset/IC3.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Strappy 2-In-1 Dress</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Strappy 2-In-1 Dress</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>172</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>172</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I4.jpg)] hover:bg-[url(./asset/IC4.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">For The Lifters T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">For The Lifters T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oat White</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>259</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>259</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I5.jpg)] hover:bg-[url(./asset/IC5.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Whitney Legging</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Whitney Legging</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Sour Pink</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>179</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>179</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I6.jpg)] hover:bg-[url(./asset/IC6.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>269</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>269</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I7.jpg)] hover:bg-[url(./asset/IC7.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Slub Textured Long Sleeve T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Slub Textured Long Sleeve T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>189</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>189</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I8.jpg)] hover:bg-[url(./asset/IC8.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Adapt Camo Cross Back Sports Bra</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Adapt Camo Cross Back Sports Bra</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Light Support</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Asphalt Grey/ Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>199</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>199</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I9.jpg)] hover:bg-[url(./asset/IC9.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Gslc T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Gslc T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black/Red</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>125</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>125</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I10.jpg)] hover:bg-[url(./asset/IC10.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Arm Tank</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Arm Tank</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">White</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>75</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>75</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I11.jpg)] hover:bg-[url(./asset/IC11.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Lightweight Slub Textured T-Shirt</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Pink</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>56</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>56</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I12.jpg)] hover:bg-[url(./asset/IC12.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Arm Tank Design</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Arm Tank Design</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">White</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>79</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>79</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I13.jpg)] hover:bg-[url(./asset/IC13.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Bodyfit Bra</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Bodyfit Bra</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Grey</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>256</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>256</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I14.jpg)] hover:bg-[url(./asset/IC14.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Gym bag</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Gym bag</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Denim</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>145</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>145</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
         </div>
 
-        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2">
+        <div class="content w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
             <div class="img-div w-[100%] h-[559px] bg-cover bg-center bg-[url(./asset/I15.jpg)] hover:bg-[url(./asset/IC15.jpg)] duration-[0.2s] cursor-pointer"></div>
             
              <div class="info w-[100%] h-[130px] text-[14px] px-[30px] flex flex-col justify-center">
-              <pre class="text-[16px] font-medium tracking-wide">Mini Gym Bag</pre>
+              <pre class="title text-[16px] font-medium tracking-wide">Mini Gym Bag</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Lawn</pre>
               <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
 
               <span class="flex justify-between items-center">
-                <span class="font-extrabold tracking-wide">$ <span>123</span></span>
-                <button class="button-50" role="button">Add cart</button>
+                <span class="price-div font-extrabold tracking-wide">$ <span>123</span></span>
+                <button class="button-50 add-cart" role="button" >Add cart</button>
               </span>
 
             </div>
@@ -384,7 +366,7 @@ load of new reasons to go gym.</pre>
 </div>
   
 <!-- men cloth  -->
-<div class="slider-men pt-13 pb-19 overflow-hidden">
+<div class="slider-men pt-13 pb-19 overflow-hidden" id="man">
 
   <div class="men-header flex items-center justify-between mb-6 mx-6 sm:mx-13">
 
@@ -410,171 +392,171 @@ load of new reasons to go gym.</pre>
 
 <div class="men-sub-slider w-[2500%] sm:w-[1200%]  md:w-[800%] lg:w-[390%] h-[707px] flex gap-2"> 
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m1.jpg)] hover:bg-[url(./asset/mc1.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m1.jpg)] hover:bg-[url(./asset/mc1.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Everyday Gym Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Everyday Gym Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 42</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 42</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m2.jpg)] hover:bg-[url(./asset/mc2.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m2.jpg)] hover:bg-[url(./asset/mc2.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Essential Muscle Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Essential Muscle Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Slim Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">White</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 39</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 39</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m3.jpg)] hover:bg-[url(./asset/mc3.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m3.jpg)] hover:bg-[url(./asset/mc3.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Breathe Cotton Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Breathe Cotton Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Relaxed Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Grey</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 45</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 45</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m4.jpg)] hover:bg-[url(./asset/mc4.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m4.jpg)] hover:bg-[url(./asset/mc4.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Training Cotton Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Training Cotton Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 50</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 50</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m5.jpg)] hover:bg-[url(./asset/mc5.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m5.jpg)] hover:bg-[url(./asset/mc5.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Performance Fit Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Performance Fit Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Regular Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">White</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 57</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 57</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m6.jpg)] hover:bg-[url(./asset/mc6.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m6.jpg)] hover:bg-[url(./asset/mc6.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Lift Prime Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Lift Prime Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Slim Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Grey</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 63</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 63</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m7.jpg)] hover:bg-[url(./asset/mc7.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m7.jpg)] hover:bg-[url(./asset/mc7.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Oversized Club Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Oversized Club Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 51</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 51</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m8.jpg)] hover:bg-[url(./asset/mc8.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m8.jpg)] hover:bg-[url(./asset/mc8.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Modal Stretch Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Modal Stretch Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Regular Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Grey</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 58</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 58</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m9.jpg)] hover:bg-[url(./asset/mc9.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m9.jpg)] hover:bg-[url(./asset/mc9.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Urban Classic Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Urban Classic Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Slim Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">White</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 53</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 53</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m10.jpg)] hover:bg-[url(./asset/mc10.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m10.jpg)] hover:bg-[url(./asset/mc10.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Classic Fit Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Classic Fit Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Relaxed Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 46</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 46</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m11.jpg)] hover:bg-[url(./asset/mc11.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m11.jpg)] hover:bg-[url(./asset/mc11.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Dry-Tech Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Dry-Tech Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Slim Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Grey</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 55</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 55</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m12.jpg)] hover:bg-[url(./asset/mc12.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m12.jpg)] hover:bg-[url(./asset/mc12.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Active Fit Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Active Fit Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Body Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">White</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 48</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 48</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
 
-<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-  <div class="men-img w-full h-[559px] bg-cover bg-center bg-[url(./asset/m13.jpg)] hover:bg-[url(./asset/mc13.jpg)] duration-[0.2s] cursor-pointer"></div>
+<div class="men-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+  <div class="men-img img-div w-full h-[559px] bg-cover bg-center bg-[url(./asset/m13.jpg)] hover:bg-[url(./asset/mc13.jpg)] duration-[0.2s] cursor-pointer"></div>
   <div class="men-info px-[30px]">
-    <pre class="text-[16px] font-medium tracking-wide">Modal Soft Touch Tee</pre>
+    <pre class="title text-[16px] font-medium tracking-wide">Modal Soft Touch Tee</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
     <pre class="text-[#6b6b6b] tracking-wide">Black</pre>
     <span class="flex justify-between items-center">
-      <span class="font-extrabold tracking-wide"><span>$ 60</span></span>
-      <button class="men-add-button button-50" role="button">Add cart</button>
+      <span class="price-div font-extrabold tracking-wide"><span>$ 60</span></span>
+      <button class="men-add-button button-50 add-cart" role="button" >Add cart</button>
     </span>
   </div>
 </div>
@@ -586,7 +568,7 @@ load of new reasons to go gym.</pre>
 <!-- men cloth  -->
 
 <!-- women cards -->
-<div class="slider-women pt-13 pb-19 overflow-hidden">
+<div class="slider-women pt-13 pb-19 overflow-hidden" id="women">
 
   <div class="women-header flex items-center justify-between mb-6 mx-6 sm:mx-13">
     <h1 class="women-title text-[15px] sm:text-[20px] md:text-[25px] lg:text-[32px] font-black">
@@ -609,183 +591,183 @@ load of new reasons to go gym.</pre>
 
   <div class="women-sub-slider w-[2500%] sm:w-[1200%] md:w-[800%] lg:w-[390%] h-[707px] flex gap-2">
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f1.jpg')] hover:bg-[url('./asset/fc1.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f1.jpg')] hover:bg-[url('./asset/fc1.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Flex Appeal Crop</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Flex Appeal Crop</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Ribbed Crop Top</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 39</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 39</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f2.jpg')] hover:bg-[url('./asset/fc2.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f2.jpg')] hover:bg-[url('./asset/fc2.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Power Seamless Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Power Seamless Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Seamless Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 42</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 42</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f3.jpg')] hover:bg-[url('./asset/fc3.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f3.jpg')] hover:bg-[url('./asset/fc3.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Sculpt Seamless Bra</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Sculpt Seamless Bra</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Low Impact Bra</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 35</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 35</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f4.jpg')] hover:bg-[url('./asset/fc4.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f4.jpg')] hover:bg-[url('./asset/fc4.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Essential Sports Bra</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Essential Sports Bra</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Medium Support</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 38</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 38</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f5.jpg')] hover:bg-[url('./asset/fc5.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f5.jpg')] hover:bg-[url('./asset/fc5.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Training Tank Top</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Training Tank Top</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Breathable Mesh</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 29</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 29</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f6.jpg')] hover:bg-[url('./asset/fc6.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f6.jpg')] hover:bg-[url('./asset/fc6.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Flow Workout Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Flow Workout Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Stretch Fabric</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 41</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 41</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f7.jpg')] hover:bg-[url('./asset/fc7.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f7.jpg')] hover:bg-[url('./asset/fc7.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Powerfit T-Shirt</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Powerfit T-Shirt</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Loose Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 37</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 37</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f8.jpg')] hover:bg-[url('./asset/fc8.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f8.jpg')] hover:bg-[url('./asset/fc8.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Move Essential Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Move Essential Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Cotton Blend</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 33</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 33</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
 
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f9.jpg')] hover:bg-[url('./asset/fc9.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f9.jpg')] hover:bg-[url('./asset/fc9.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">UltraFlex Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">UltraFlex Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Body Hug Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 36</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 36</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
   
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f10.jpg')] hover:bg-[url('./asset/fc10.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f10.jpg')] hover:bg-[url('./asset/fc10.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Everyday Motion Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Everyday Motion Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Relaxed Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 40</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 40</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
   
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f11.jpg')] hover:bg-[url('./asset/fc11.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f11.jpg')] hover:bg-[url('./asset/fc11.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Performance Gym Top</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Performance Gym Top</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Slim Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 44</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 44</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
   
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f12.jpg')] hover:bg-[url('./asset/fc12.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f12.jpg')] hover:bg-[url('./asset/fc12.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">ComfortFit Cotton Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">ComfortFit Cotton Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Breathable Cotton</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 46</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 46</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
 
   
-    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="women-img bg-[url('./asset/f13.jpg')] hover:bg-[url('./asset/fc13.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="women-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="women-img img-div bg-[url('./asset/f13.jpg')] hover:bg-[url('./asset/fc13.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="women-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Active Modal Tee</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Active Modal Tee</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Oversized Fit</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colors</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 48</span>
-          <button class="women-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 48</span>
+          <button class="women-add-button button-50 add-cart" >Add cart</button>
         </span>
       </div>
     </div>
@@ -821,7 +803,7 @@ load of new reasons to go gym.</pre>
 
 <!-- accessories cards -->
 
-<div class="slider-accessories pt-13 pb-19 overflow-hidden">
+<div class="slider-accessories pt-13 pb-19 overflow-hidden" id="accessories">
 
   <div class="accessories-header flex items-center justify-between mb-6 mx-6 sm:mx-13">
     <h1 class="accessories-title text-[15px] sm:text-[20px] md:text-[25px] lg:text-[32px] font-black">
@@ -843,171 +825,171 @@ load of new reasons to go gym.</pre>
 
   <div class="accessories-sub-slider w-[2500%] sm:w-[1200%] md:w-[800%] lg:w-[390%] h-[707px] flex gap-2">
   
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a1.jpg')] hover:bg-[url('./asset/ac1.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a1.jpg')] hover:bg-[url('./asset/ac1.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Pink Bag</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Pink Bag</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 39</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 39</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a2')] hover:bg-[url('./asset/ac2.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a2')] hover:bg-[url('./asset/ac2.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">White Bag</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">White Bag</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 45</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 45</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a3.jpg')] hover:bg-[url('./asset/ac3.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a3.jpg')] hover:bg-[url('./asset/ac3.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Gym Steel Bottle</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Gym Steel Bottle</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 41</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 41</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a4.jpg')] hover:bg-[url('./asset/ac4.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a4.jpg')] hover:bg-[url('./asset/ac4.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Lever Belt</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Lever Belt</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 236</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 236</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a5.jpg')] hover:bg-[url('./asset/ac5.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a5.jpg')] hover:bg-[url('./asset/ac5.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Hot & Cold Bottle</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Hot & Cold Bottle</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 32</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 32</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a6.jpg')] hover:bg-[url('./asset/ac6.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a6.jpg')] hover:bg-[url('./asset/ac6.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Shocks</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Shocks</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 47</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 47</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a7.jpg')] hover:bg-[url('./asset/ac7.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a7.jpg')] hover:bg-[url('./asset/ac7.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">2l Bottle</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">2l Bottle</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 34</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 34</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a8.jpg')] hover:bg-[url('./asset/ac8.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a8.jpg')] hover:bg-[url('./asset/ac8.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Protein Shaker</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Protein Shaker</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 31</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 31</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a9.jpg')] hover:bg-[url('./asset/ac9.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a9.jpg')] hover:bg-[url('./asset/ac9.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Face Band</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Face Band</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 44</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 44</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a10.jpg')] hover:bg-[url('./asset/ac10.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a10.jpg')] hover:bg-[url('./asset/ac10.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Hand Gloves</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Hand Gloves</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 40</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 40</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a11.jpg')] hover:bg-[url('./asset/ac11.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a11.jpg')] hover:bg-[url('./asset/ac11.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Shocks Normal</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Shocks Normal</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 38</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 38</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a12.jpg')] hover:bg-[url('./asset/ac12.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a12.jpg')] hover:bg-[url('./asset/ac12.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Waist Bag</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Waist Bag</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 43</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 43</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
 
-    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2">
-      <div class="accessories-img bg-[url('./asset/a13.jpg')] hover:bg-[url('./asset/ac13.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
+    <div class="accessories-card w-[447px] h-[707px] flex flex-col justify-center gap-2 product-card">
+      <div class="accessories-img img-div bg-[url('./asset/a13.jpg')] hover:bg-[url('./asset/ac13.jpg')] w-full h-[559px] bg-cover bg-center duration-[0.2s] cursor-pointer"></div>
       <div class="accessories-info px-[30px]">
-        <pre class="text-[16px] font-medium tracking-wide">Lifting Gloves</pre>
+        <pre class="title text-[16px] font-medium tracking-wide">Lifting Gloves</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Made with heavy materials</pre>
         <pre class="text-[#6b6b6b] tracking-wide">Available in all colours</pre>
         <span class="flex justify-between items-center">
-          <span class="font-extrabold tracking-wide">$ 46</span>
-          <button class="accessories-add-button button-50">Add cart</button>
+          <span class="price-div font-extrabold tracking-wide">$ 46</span>
+          <button class="accessories-add-button button-50 add-cart">Add cart</button>
         </span>
       </div>
     </div>
@@ -1037,11 +1019,6 @@ load of new reasons to go gym.</pre>
       <p>© 2025 | Gymshark Limited | Al Tayer Insignia LLC | All Rights Reserved.</p>
  </div>
 <!-- footer 2 -->
-
-
-
-
-
 
 <script src="script.js"></script>
 </body>

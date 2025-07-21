@@ -4,6 +4,7 @@
 *{
     font-family: "Poppins", sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 .header{
@@ -13,12 +14,12 @@
 
 @media (min-width: 406px) and (max-width: 428px) {
   .content {
-    @apply w-[400px];   
+     width: 400px; 
   }
 }
 @media (min-width: 0px) and (max-width: 406px) {
   .content {
-    @apply w-[350px];   
+     width: 400px;
   }
 }
 
@@ -70,4 +71,29 @@
   transform: translate(2px, 2px);
 }
 
+
+/* scroll bar globally */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray black;
+}
+/* scroll bar globally */
 

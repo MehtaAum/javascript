@@ -1,104 +1,23 @@
 let body = document.querySelector(".body");
-let ham = document.querySelector(".hamburger");
-let searchLogo = document.querySelector(".search-logo")
 let circleLeft = document.querySelector(".circle-l")
 let circleRight = document.querySelector(".circle-r")
 let subSlider = document.querySelector(".sub-slider")
 
-//slider
 let current = 0
-
-let cardWidth = function (){
-    return document.querySelector(".content").offsetWidth + 8
+let cardWidth = function () {
+  return document.querySelector(".content").offsetWidth + 8
 }
-//slider
 
-let hamClick = document.createElement("div");
-hamClick.classList = "w-full fixed z-40 top-0 h-screen border-2 bg-white";
-hamClick.style.transition = "all 0.5s ease";
-hamClick.style.opacity = "0";
-hamClick.style.transform = "translateX(-300px)";
-
-let searchClick = document.createElement("div");
-searchClick.classList = "w-full fixed top-0 z-40 h-screen border-2 bg-[white]";
-searchClick.style.transition = "all 0.5s ease";
-searchClick.style.opacity = "0";
-searchClick.style.transform = "translateX(-300px)";
-
-ham.addEventListener("click", function () {
-
-    body.appendChild(hamClick);
-    hamClick.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" id="cross" width="26" height="26" viewBox="0 0 24 24">
-        <path fill="#000" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z" />
-        </svg>
-    `
-    
-    setTimeout(() => {
-      hamClick.style.opacity = "1";
-      hamClick.style.transform = "translateX(0)";
-    }, 10);
-
-
-    let cross = document.getElementById("cross");
-    cross.classList = `absolute right-[10px] top-[10px]`
-
-    cross.addEventListener("click", function () {
-
-        hamClick.style.opacity = "0";
-        hamClick.style.transform = "translateX(-300px)";
-        setTimeout(() => {
-            body.removeChild(hamClick);
-        }, 500);
-
-    });
-
-  
-});
-
-searchLogo.addEventListener("click" , function(){
-    body.appendChild(searchClick);
-    searchClick.innerHTML = `
-    <div class="w-[100%] h-[70px] flex justify-between items-center px-[25px]">
-        <svg xmlns="http://www.w3.org/2000/svg" id="arrow-search" class="w-[30px] h-[30px]"  viewBox="0 0 24 24">
-        <path fill="#000" d="m9.55 12l7.35 7.35q.375.375.363.875t-.388.875t-.875.375t-.875-.375l-7.7-7.675q-.3-.3-.45-.675t-.15-.75t.15-.75t.45-.675l7.7-7.7q.375-.375.888-.363t.887.388t.375.875t-.375.875z" />
-        </svg> 
-
-        <div class="relative w-[86%]">
-            <input type="text" id="search" class="bg-[#f5f4f4] hover:bg-[#e0e0e0] duration-[0.3s] outline-none w-[100%] px-3 ps-10 h-[50px] rounded-[10px]" placeholder="Product">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="ms-2 absolute bottom-[14px] z-10" width="23" height="23" viewBox="0 0 24 24">
-            <path fill="#000" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
-            </svg> 
-        </div>
-    </div>    
-    `
-    setTimeout(() => {
-        searchClick.style.opacity = `1`
-        searchClick.style.transform = "translateX(0)";
-    }, 10);
-
-    let arrowSearch = document.getElementById("arrow-search")
-
-    arrowSearch.addEventListener("click" , function () {
-        searchClick.style.opacity = "0";
-        searchClick.style.transform = "translateX(-300px)";
-        setTimeout(() => {
-            body.removeChild(searchClick);
-        }, 500);
-    })
+circleRight.addEventListener("click", function () {
+  current -= cardWidth()
+  subSlider.style.transform = `translateX(${current}px)`
+  subSlider.style.transition = `transform 0.4s ease`
 })
 
-circleRight.addEventListener("click" , function () {
-    current -= cardWidth()
-    subSlider.style.transform = `translateX(${current}px)`
-    subSlider.style.transition = `transform 0.4s ease`
-})
-
-circleLeft.addEventListener("click" , function () {
-    current += cardWidth()
-    subSlider.style.transform = `translateX(${current}px)`
-    subSlider.style.transition = `transform 0.4s ease`
+circleLeft.addEventListener("click", function () {
+  current += cardWidth()
+  subSlider.style.transform = `translateX(${current}px)`
+  subSlider.style.transition = `transform 0.4s ease`
 })
 
 // video paused & play
@@ -112,9 +31,6 @@ videoHero.addEventListener("click", function (e) {
     heroVideo.pause();
   }
 });
-// video paused & play
-
-
 
 // slider 2
 let menPrevButton = document.querySelector(".men-prev");
@@ -139,8 +55,6 @@ menPrevButton.addEventListener("click", function () {
   menSliderTrack.style.transition = `transform 0.4s ease`;
 });
 
-// slider 2
-
 // slider 3
 let womenPrevButton = document.querySelector(".women-prev");
 let womenNextButton = document.querySelector(".women-next");
@@ -149,7 +63,7 @@ let womenSliderTrack = document.querySelector(".women-sub-slider");
 let womenCurrentPosition = 0;
 
 let getWomenCardWidth = function () {
-  return document.querySelector(".women-card").offsetWidth + 8; // card width + gap
+  return document.querySelector(".women-card").offsetWidth + 8;
 };
 
 womenNextButton.addEventListener("click", function () {
@@ -164,9 +78,7 @@ womenPrevButton.addEventListener("click", function () {
   womenSliderTrack.style.transition = `transform 0.4s ease`;
 });
 
-// slider 3
-
-//video 2 play & paused
+// video 2
 let videoHero2 = document.getElementById("video-hero2");
 let heroVideo2 = document.getElementById("heroVideo2");
 
@@ -177,8 +89,6 @@ videoHero2.addEventListener("click", function (e) {
     heroVideo2.pause();
   }
 });
-//video 2 play & paused
-
 
 // slider 4
 let accessoriesPrevButton = document.querySelector(".accessories-prev");
@@ -202,4 +112,230 @@ accessoriesPrevButton.addEventListener("click", function () {
   accessoriesSliderTrack.style.transform = `translateX(${accessoriesCurrentPosition}px)`;
   accessoriesSliderTrack.style.transition = `transform 0.4s ease`;
 });
-// slider 4
+
+// ======================= CART =======================
+let addCartBtn = document.querySelector("#add-cart-btn");
+let divCart = document.createElement("div");
+
+//Load cart from localStorage
+let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+let quantityCount = 0;
+let roundCountAdd = 0;
+
+divCart.style.display = "none";
+divCart.className = "w-[100%] sm:w-[70%] md:w-[40%] lg:w-[30%] h-[100vh] bg-white fixed top-0 right-0 z-50 translate-x-full transition-transform duration-500 ease-in-out overflow-y-scroll shadow-md";
+
+document.body.appendChild(divCart);
+
+addCartBtn.addEventListener("click", function () {
+  divCart.style.boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px";
+  updateCart();
+  requestAnimationFrame(() => {
+    divCart.classList.remove("translate-x-full");
+  });
+});
+
+let addCartButtons = document.querySelectorAll(".add-cart");
+
+addCartButtons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    let productCard = btn.closest(".product-card");
+    let title = productCard.querySelector(".title").innerText;
+    let price = productCard.querySelector(".price-div").innerText;
+    let imgDiv = productCard.querySelector(".img-div");
+    let bg = window.getComputedStyle(imgDiv).backgroundImage;
+    let image = bg.slice(5, -2);
+
+    let existingItem = cartItems.find((item) => item.title === title);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+      roundCountAdd++;
+    } else {
+      cartItems.push({
+        title: title,
+        bg: image,
+        quantity: 1,
+        price: price,
+      });
+    }
+
+    updateCart();
+  });
+});
+
+function updateCart() {
+  // Save to localStorage
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+  let itemsHtml = cartItems.map((item, index) => `
+    <div class="p-4 border-b border-b-[#9c9c9c] flex gap-4 items-center">
+      <img src="${item.bg}" alt="Product" class="w-[70px] h-[70px] object-cover rounded-[10px]" />
+      <div class="flex-1">
+        <h3 class="font-semibold text-[16px] mb-2">${item.title}</h3>
+        <h3 class="font-semibold text-[16px] mb-2">${item.price}</h3>
+        <div class="font-medium text-[16px] flex items-center gap-3">
+          Quantity :
+          <div class="minus-div w-[23px] h-[23px] border-[0.5px] rounded-2xl flex justify-center items-center cursor-pointer" data-index="${index}">−</div>
+          <span>${item.quantity}</span>
+          <div class="plus-div w-[23px] h-[23px] border-[0.5px] rounded-2xl flex justify-center items-center cursor-pointer" data-index="${index}">+</div>
+        </div>
+      </div>
+      <div class="delete-box cursor-pointer active:scale-[70%] duration-[0.3s] will-change-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="#000" d="M7 21q-.825 0-1.412-.587T5 19V6q-.425 0-.712-.288T4 5t.288-.712T5 4h4q0-.425.288-.712T10 3h4q.425 0 .713.288T15 4h4q.425 0 .713.288T20 5t-.288.713T19 6v13q0 .825-.587 1.413T17 21zm3-4q.425 0 .713-.288T11 16V9q0-.425-.288-.712T10 8t-.712.288T9 9v7q0 .425.288.713T10 17m4 0q.425 0 .713-.288T15 16V9q0-.425-.288-.712T14 8t-.712.288T13 9v7q0 .425.288.713T14 17" />
+        </svg>
+      </div>
+    </div>
+  `).join("");
+
+  let totalItemCount = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+  let roundCount = document.querySelector(".round-count");
+  if (roundCount) {
+    if (totalItemCount > 0) {
+      roundCount.classList.add("bg-black");
+      roundCount.innerHTML = `<div>${totalItemCount}</div>`;
+    } else {
+      roundCount.classList.remove("bg-black");
+      roundCount.innerHTML = "";
+    }
+  }
+
+  divCart.scrollTop = divCart.scrollHeight;
+
+  let subtotal = 0;
+  cartItems.forEach((item) => {
+    let numPrice = parseFloat(item.price.replace(/[^\d.]/g, '').trim());
+    if (!isNaN(numPrice)) subtotal += numPrice * item.quantity;
+  });
+
+divCart.innerHTML = `
+    <div class="w-full h-[35px] relative">
+      <svg xmlns="http://www.w3.org/2000/svg" id="cross-cart" width="26" height="26" viewBox="0 0 24 24"
+        class="absolute cursor-pointer right-[10px] top-[10px]">
+        <path fill="#000" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/>
+      </svg>
+    </div>
+    <div>${itemsHtml}</div>
+
+    <div class="payment-info w-[100%] p-4 flex flex-col gap-3 ">
+          <div class="flex justify-between items-center"> <div class="font-medium">Sub Total </div> <div>$${subtotal.toFixed(2)}</div> </div>
+
+          <div class="flex justify-between items-center"> <div class="font-medium cursor-pointer flex gap-1 items-center" title="shipping fee in US">Shipping Fee Estimate
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" class="font-light" height="18" viewBox="0 0 24 24">
+            <path fill="#000" d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg>
+          </div> <div>FREE</div> </div>
+
+          <div class="flex justify-between items-center"> <div class="font-bold flex gap-2 items-center">Total<sub class="text-[10px]">VAT & DUTIES INCLUSIVE</sub></div> <div class="font-bold">$${subtotal.toFixed(2)}</div> </div>
+    </div>
+
+    <div class="empty-div w-[100%] h-[60px] mt-2"></div>
+    <div class=" w-[100%] h-[auto] flex justify-center items-center">
+     <button
+        class="payment-checkout w-[300px] fixed bottom-3 h-[40px] rounded-2xl bg-[#000000] hover:scale-[98%] will-change-transform duration-[0.2s] cursor-pointer text-white"
+        style="
+          box-shadow: rgba(17, 17, 26, 0.7) 0px 8px 24px,
+                      rgba(17, 17, 26, 0.1) 0px 16px 56px,
+                      rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        "
+        onmouseover="this.style.boxShadow='rgba(17,17,26,0.5) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 56px, rgba(17,17,26,0.1) 0px 24px 80px'"
+        onmouseout="this.style.boxShadow='rgba(17,17,26,0.8) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 56px, rgba(17,17,26,0.1) 0px 24px 80px'"
+      >
+        Proceed to checkout
+</button>
+    </div>
+
+   
+  `;
+  divCart.style.display = "block";
+
+  divCart.querySelector("#cross-cart").addEventListener("click", function () {
+    divCart.classList.add("translate-x-full");
+    setTimeout(() => { divCart.style.display = "none"; }, 500);
+  });
+
+  divCart.querySelectorAll(".plus-div").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let index = btn.getAttribute("data-index");
+      cartItems[index].quantity++;
+      roundCountAdd++;
+      updateCart();
+    });
+  });
+
+  divCart.querySelectorAll(".minus-div").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      let index = btn.getAttribute("data-index");
+      if (cartItems[index].quantity > 1) {
+        cartItems[index].quantity--;
+      } else {
+        cartItems.splice(index, 1);
+      }
+      updateCart();
+    });
+  });
+
+  divCart.querySelectorAll(".delete-box").forEach((delBtn, index) => {
+    delBtn.addEventListener("click", () => {
+      cartItems.splice(index, 1);
+      updateCart();
+    });
+  });
+}
+
+// Checkout & clear localStorage
+divCart.addEventListener("click", function (e) {
+  if (e.target.classList.contains("payment-checkout")) {
+    alert("✅ Payment Successfully");
+
+    let roundCount = document.querySelector(".round-count");
+    if (roundCount) {
+      roundCount.classList.remove("bg-black");
+      roundCount.innerHTML = "";
+    }
+
+    cartItems = [];
+
+    //Clear localStorage on checkout
+    localStorage.removeItem("cartItems");
+
+      divCart.innerHTML = `
+
+         <div class="w-full h-[35px] relative">
+        <svg xmlns="http://www.w3.org/2000/svg" id="cross-cart" width="26" height="26" viewBox="0 0 24 24"
+          class="absolute cursor-pointer right-[10px] top-[10px]">
+          <path fill="#000" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/>
+        </svg>
+      </div>
+
+
+       <div class="empty-div w-[100%] h-[60px]"></div>
+      <div class=" w-[100%] h-[auto] flex justify-center items-center">
+       <button
+          class="payment-checkout w-[300px] fixed bottom-3 h-[40px] rounded-2xl bg-[#000000] hover:scale-[98%] will-change-transform duration-[0.2s] cursor-pointer text-white"
+          style="
+            box-shadow: rgba(17, 17, 26, 0.7) 0px 8px 24px,
+                        rgba(17, 17, 26, 0.1) 0px 16px 56px,
+                        rgba(17, 17, 26, 0.1) 0px 24px 80px;
+          "
+          onmouseover="this.style.boxShadow='rgba(17,17,26,0.5) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 56px, rgba(17,17,26,0.1) 0px 24px 80px'"
+          onmouseout="this.style.boxShadow='rgba(17,17,26,0.8) 0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 56px, rgba(17,17,26,0.1) 0px 24px 80px'"
+        >
+          Proceed to checkout
+  </button>
+      </div>
+     
+     `
+  }
+
+  divCart.style.display = "block";
+
+  divCart.querySelector("#cross-cart").addEventListener("click", function () {
+    divCart.classList.add("translate-x-full");
+    setTimeout(() => { divCart.style.display = "none"; }, 500);
+  });
+});
+
+updateCart();
